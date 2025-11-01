@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    /* Basic Project Options */
+    "target": "ES2022",
+    "outDir": "./src/compiled",
+    "rootDir": "./src",
+
+    // "strict": true /* Enable all strict type-checking (recommended even for minimal) */,
+
+    "skipLibCheck": true /* Speed up compilation by skipping type checks on declaration files */
+  },
+  "include": ["src/**/*" /* Include all files inside the 'src' directory */]
+}

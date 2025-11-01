@@ -1,0 +1,80 @@
+:root {
+    --editor-width: 400px;
+    --editor-max-width: 50vw;
+    --editor-padding: 10px;
+    --divider-margin: 7px;
+    --output-padding: 10px;
+
+    --color: black;
+    --background-color: white;
+
+    color: var(--color);
+    background-color: var(--background-color);
+}
+
+:root[theme="dark"] {
+    --color: white;
+    --background-color: black;
+}
+
+body {
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Courier New", Courier, monospace;
+    overflow: hidden;
+}
+
+#editor {
+    width: var(--editor-width);
+    max-width: var(--editor-max-width);
+    min-height: 90vh;
+    padding: var(--editor-padding);
+}
+
+#output {
+    padding-left: var(--output-padding);
+    padding-right: var(--output-padding);
+    flex-grow: 1;
+    border: 1px solid;
+}
+
+#output div,
+#output h1,
+#output h2,
+#output h3,
+#output h4,
+#output h5,
+#output h6,
+#output divider {
+    display: flex;
+    align-items: center;
+}
+
+#output div:hover > p,
+#output h1:hover > p,
+#output h2:hover > p,
+#output h3:hover > p,
+#output h4:hover > p,
+#output h5:hover > p,
+#output h6:hover > p,
+#output divider:hover > p {
+    display: flex;
+    margin: 0px;
+    margin-right: var(--output-padding);
+    opacity: 0.5;
+}
+
+#output div p,
+#output h1 p,
+#output h2 p,
+#output h3 p,
+#output h4 p,
+#output h5 p,
+#output h6 p,
+#output divider p {
+    display: none;
+    opacity: 0;
+}

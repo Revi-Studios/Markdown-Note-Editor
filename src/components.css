@@ -1,0 +1,32 @@
+row {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+row.border {
+    border: 1px solid black;
+}
+
+divider {
+    border-bottom: 1px solid var(--color);
+    margin-left: var(--divider-margin);
+    margin-right: var(--divider-margin);
+    display: flex;
+    flex-grow: 1;
+}
+
+column {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+p {
+    display: flex;
+}
+
+p input {
+    margin: 0px;
+    margin-right: 5px;
+}

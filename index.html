@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="src/style.css" />
+        <link rel="stylesheet" href="src/components.css" />
+        <title>Markdown editor</title>
+    </head>
+
+    <body>
+        <row class="border" style="max-height: 40px; align-items: center; padding-left: 20px">
+            <h2 style="opacity: 0.5">Editor</h2>
+        </row>
+        <row>
+            <textarea id="editor"></textarea>
+            <div id="output"></div>
+        </row>
+
+        <script type="module" src="src/main.ts"></script>
+        <script type="module" src="src/func/format_to_html.ts"></script>
+        <script type="module" src="/src/func/process_line_to_html.ts"></script>
+        <script type="module" src="/src/func/startup.ts"></script>
+    </body>
+</html>
