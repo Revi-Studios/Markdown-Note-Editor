@@ -1,8 +1,11 @@
-# Project: Notemark editor
+# Markdown Notes
 
 ## How does it work?:
 
 **Features:**
+
+> [!Note]
+> These features are maybe coming in the future.
 
 - Formats _current line_ on every input
 - Formats to _markdown mix_
