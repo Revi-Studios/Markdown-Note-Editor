@@ -1,0 +1,91 @@
+/* src/style.css */
+:root {
+  --editor-width: 400px;
+  --editor-max-width: 50vw;
+  --editor-padding: 10px;
+  --divider-margin: 7px;
+  --output-padding: 10px;
+  --color: black;
+  --background-color: white;
+  color: var(--color);
+  background-color: var(--background-color);
+}
+
+:root[theme="dark"] {
+  --color: white;
+  --background-color: black;
+}
+
+body {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: Courier New, Courier, monospace;
+}
+
+#editor {
+  width: var(--editor-width);
+  max-width: var(--editor-max-width);
+  padding: var(--editor-padding);
+  min-height: 90vh;
+}
+
+#output {
+  padding-left: var(--output-padding);
+  padding-right: var(--output-padding);
+  border: 1px solid;
+  flex-grow: 1;
+}
+
+#output div, #output h1, #output h2, #output h3, #output h4, #output h5, #output h6, #output divider {
+  display: flex;
+  align-items:  center;
+}
+
+#output div:hover > p, #output h1:hover > p, #output h2:hover > p, #output h3:hover > p, #output h4:hover > p, #output h5:hover > p, #output h6:hover > p, #output divider:hover > p {
+  display: flex;
+  margin: 0;
+  margin-right: var(--output-padding);
+  opacity: .5;
+}
+
+#output div p, #output h1 p, #output h2 p, #output h3 p, #output h4 p, #output h5 p, #output h6 p, #output divider p {
+  display: none;
+  opacity: 0;
+}
+
+/* src/components.css */
+row {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+row.border {
+  border: 1px solid #000;
+}
+
+divider {
+  border-bottom: 1px solid var(--color);
+  margin-left: var(--divider-margin);
+  margin-right: var(--divider-margin);
+  display: flex;
+  flex-grow: 1;
+}
+
+column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+p {
+  display: flex;
+}
+
+p input {
+  margin: 0 5px 0 0;
+}
