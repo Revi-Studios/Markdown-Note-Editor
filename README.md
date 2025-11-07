@@ -2,6 +2,9 @@
 
 ## How does it work?:
 
+> [!Tip]
+> If you can check out the hosted [released version](https://revi-studios.github.io/Markdown-Note-Editor/)
+
 **Features:**
 
 > [!Note]
