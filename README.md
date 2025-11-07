@@ -1,9 +1,11 @@
 # Markdown Notes
 
+This project is/was supposed to be a minimal, leight weight and easy to use note taking web app inspired by [Obsidians](https://obsidian.md/) realtime one editor markdown editor.
+
 ## How does it work?:
 
 > [!Tip]
-> If you can check out the hosted [released version](https://revi-studios.github.io/Markdown-Note-Editor/)
+> There is a hosted [released version](https://revi-studios.github.io/Markdown-Note-Editor/)
 
 **Features:**
 
