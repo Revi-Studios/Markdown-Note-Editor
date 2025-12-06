@@ -1,12 +1,12 @@
 :root {
-    --editor-width: 400px;
-    --editor-max-width: 50vw;
+    --editor-default-width: 50vw;
     --editor-padding: 10px;
     --divider-margin: 7px;
     --output-padding: 10px;
 
     --color: black;
     --background-color: white;
+    --border-color: black;
 
     color: var(--color);
     background-color: var(--background-color);
@@ -15,6 +15,7 @@
 :root[theme="dark"] {
     --color: white;
     --background-color: black;
+    --border-color: #d1d1d1;
 }
 
 body {
@@ -27,18 +28,29 @@ body {
     overflow: hidden;
 }
 
+#top-bar {
+    border-bottom: 1px solid var(--border-color);
+    max-height: 40px;
+    align-items: center;
+    padding: 0px 10px;
+    direction: rtl;
+}
+
 #editor {
-    width: var(--editor-width);
-    max-width: var(--editor-max-width);
-    min-height: 90vh;
+    width: var(--editor-default-width);
     padding: var(--editor-padding);
+    background-color: var(--background-color);
+    color: var(--color);
+    outline: none;
+    border: none;
+    border-right: 1px solid var(--border-color);
+    resize: horizontal;
 }
 
 #output {
     padding-left: var(--output-padding);
     padding-right: var(--output-padding);
     flex-grow: 1;
-    border: 1px solid;
 }
 
 #output div,
